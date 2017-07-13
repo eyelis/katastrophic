@@ -10,7 +10,7 @@ import org.junit.Test;
 public class GildedRoseTest {
 
 	@Test
-	public void foo() {
+	public void testNameShouldNotChangeWhenUpdate() {
 		List<Item> items = Arrays.asList(new Item("foo", 0, 0));
 		GildedRose app = new GildedRose(items);
 		app.updateQuality();
