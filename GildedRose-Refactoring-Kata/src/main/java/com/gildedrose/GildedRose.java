@@ -72,14 +72,12 @@ class GildedRose {
     }
 
     private void updateBackstageQuality(Item item) {
-        if (isLowerThanMaxQuality(item)) {
-            if (item.sellIn < SELLIN_THRESHOLD_INCREASE_QUALITY_ONCE) {
-                increaseQuality(item);
-            }
+        if (isLowerThanMaxQuality(item) && item.sellIn < SELLIN_THRESHOLD_INCREASE_QUALITY_ONCE) {
+            increaseQuality(item);
+        }
 
-            if (item.sellIn < SELLIN_THRESHOLD_INCREASE_QUALITY_TWICE) {
-                increaseQuality(item);
-            }
+        if (isLowerThanMaxQuality(item) && item.sellIn < SELLIN_THRESHOLD_INCREASE_QUALITY_TWICE) {
+            increaseQuality(item);
         }
     }
 
