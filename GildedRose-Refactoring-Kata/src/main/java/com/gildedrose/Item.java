@@ -25,6 +25,7 @@ public class Item implements Updatable {
         return this.name + ", " + this.sellIn + ", " + this.quality;
     }
 
+    @Override
     public void update() {
         decreaseSellIn();
 
