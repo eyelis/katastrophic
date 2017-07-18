@@ -37,7 +37,7 @@ public class GildedRoseTest {
 
         worstQualityItem = new Item("Worst Quality Item", 0, 0);
 
-        bestQualityItem = new Item("Best Quality Item", 0, 50);
+        bestQualityItem = new AgedBrieItem("Aged Brie", 0, 50);
 
         plusFiveDextryVest = new Item("+5 Dexterity Vest", 10, 20);
         elixirOfTheMongoose = new Item("Elixir of the Mongoose", 5, 7);
@@ -53,7 +53,7 @@ public class GildedRoseTest {
 
         conjured = new ConjuredItem("Conjured Mana Cake", 5, 7);
 
-        GildedRose app = new GildedRose(Arrays.asList(foo, plusFiveDextryVest, elixirOfTheMongoose, agedBrie,
+        GildedRose app = new GildedRose(Arrays.asList(foo, worstQualityItem, bestQualityItem, plusFiveDextryVest, elixirOfTheMongoose, agedBrie,
                 sulfurasSellin0, sulfurasSellinMinus1, backstagPasses1, backstagePasses2, backstagePasses3, conjured));
 
         app.updateQuality();
