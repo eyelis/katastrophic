@@ -4,13 +4,13 @@ import java.util.List;
 
 class GildedRose {
 
-    private List<Item> items;
+    private List<Updatable> items;
 
-    public List<Item> getItems() {
+    public List<Updatable> getItems() {
         return items;
     }
 
-    public GildedRose(List<Item> items) {
+    public GildedRose(List<Updatable> items) {
         this.items = items;
     }
 

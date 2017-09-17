@@ -7,7 +7,7 @@ public class TexttestFixture {
 	public static void main(String[] args) {
 		System.out.println("OMGHAI!");
 
-		List<Item> items = Arrays.asList(new Item("+5 Dexterity Vest", 10, 20), //
+		List<Updatable> items = Arrays.asList(new Item("+5 Dexterity Vest", 10, 20), //
 				new AgedBrieItem(2, 0), //
 				new Item("Elixir of the Mongoose", 5, 7), //
 				new SulfurasItem(0, 80), //
@@ -27,7 +27,7 @@ public class TexttestFixture {
 		for (int i = 0; i < days; i++) {
 			System.out.println("-------- day " + i + " --------");
 			System.out.println("name, sellIn, quality");
-			for (Item item : items) {
+			for (Updatable item : items) {
 				System.out.println(item);
 			}
 			System.out.println();
